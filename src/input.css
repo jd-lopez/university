@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  li {
+    list-style: none;
+  }
+}
+
+@layer components {
+  .navBtn {
+    @apply py-3 px-2 hover:bg-sky-100 hover:border-t-2 border-black flex flex-1 justify-between whitespace-nowrap font-normal
+  }
+
+
+  .mobileNav {
+    @apply py-1 px-2 font-bold cursor-pointer;
+  }
+
+  .list {
+    @apply text-black p-2 md:py-2 text-[1rem] rounded-md hover:bg-sky-400 hover:text-white font-medium cursor-pointer;
+  }
+
+  .leftNav {
+    @apply md:text-white md:flex md:items-center md:justify-between md:gap-2 md:bg-gradient-to-r md:hover:from-white md:hover:to-transparent md:pl-24 pr-16 md:py-1 md:cursor-pointer
+  }
+
+
+}
+
+/* .showMenu {
+  visibility: visible;
+  opacity: 1;
+  translate: -100%;
+} */

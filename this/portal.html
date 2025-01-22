@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+
+<body>
+    <main>
+        <div class="md:flex">
+            <div
+                class="flex flex-col justify-center flex-1 md:m-6 bg-white p-8 rounded-md shadow-md bg bg-white/30 backdrop-blur-md md:w-28">
+                <div class="flex flex-col gap-4 items-center" id="dataSection">
+                    <h1 class="text-center md:text-2xl text-black font-bold">This is the database
+                        section.
+                        Please log
+                        in as a
+                        Professor or Student to get access</h1>
+                    <div class="">
+                        <button id="teachers"
+                            class="w-full rounded-lg bg-slate-400 py-2 px-3 bg-gradient-to-r from-teal-400 to-blue-500 text-white font-bold shadow-lg hover:bg-gradient-to-[45deg] hover:from-sky-500 hover:to-sky-900 hover:ring">
+                            I am a Teacher
+                        </button>
+                    </div>
+                    <div class="">
+                        <button id="students"
+                            class="w-full rounded-lg bg-slate-400 py-2 px-3 bg-gradient-to-r from-teal-400 to-blue-500 text-white font-bold shadow-lg hover:bg-gradient-to-[45deg] hover:from-sky-500 hover:to-sky-900">
+                            I am a student
+                        </button>
+                    </div>
+                </div>
+
+
+                <div id="tLogin" class="hidden flex flex-col justify-between items-center md:px-44">
+                    <h1
+                        class="bg-gradient-to-r from-red-400 via-pink-600 to-blue-600 bg-clip-text text-transparent md:text-3xl font-bold mb-2">
+                        Please Enter your Professor credentials
+                    </h1>
+
+                    <div class="flex-col my-5 group w-full">
+                        <div class="flex flex-col">
+                            <label for="" class="mb-2 text-black font-bold text-base tracking-widest">Username</label>
+                            <input type="text" placeholder="Enter Username"
+                                class="rounded-md py-2 px-1 outline-none shadow-md" id="userName">
+                            <span class="text-rose-500" id="userError"></span>
+                        </div>
+                        <div class=" flex flex-col mt-6">
+                            <label for="" class="mb-2 text-black font-bold text-base tracking-widest">Password</label>
+                            <input type="password" placeholder="Enter password"
+                                class="placeholder:italic rounded-md py-2 px-1 outline-none shadow-md" id="pwd">
+                            <span class="text-rose-500" id="passError"></span>
+                        </div>
+                    </div>
+                    <button class=" text-center bg-sky-600 p-2 rounded-md text-white font-bold w-full shadow-md"
+                        id="userLogin">Log
+                        In</button>
+                    <div class="flex justify-between w-full">
+                        <span class="self-start text-xs mt-3 text-black">Are you a new teacher? <a
+                                class="text-blue-600 " href="#tRegister" id="registerRedirect">Register
+                                here</a></span>
+                        <span class="self-start text-xs mt-3 text-black">Are you a student? Click <a
+                                class="text-blue-600 " href="">Here</a> to
+                            log
+                            in</span>
+                    </div>
+
+                </div>
+
+                <div id="tRegister" class="hidden flex flex-col justify-between items-center md:px-44">
+                    <h1 class="text-sky-600 font-medium text-center mb-5 text-2xl">Please register with your new
+                        credentials.
+                    </h1>
+                    <form action="" class="flex flex-col space-y-4 w-full" id="form">
+
+                        <div class="flex flex-col" id="firstFormDiv">
+                            <label for="firstName" class=" mb-2 text-black font-bold text-base tracking-widest">First
+                                Name</label>
+                            <input type="text" placeholder="Enter first name"
+                                class="rounded-md py-2 px-1 outline-none shadow-md" id="firstName">
+                            <span class="text-rose-500 "></span>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <label for="lastName" class="mb-2 text-black font-bold text-base tracking-widest">Last
+                                Name</label>
+                            <input type="text" placeholder="Enter Last name"
+                                class="rounded-md py-2 px-1 outline-none shadow-md" id="lastName">
+                            <span class="text-rose-500" id=""></span>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <label for="newUser" class="mb-2 text-black font-bold text-base tracking-widest">Create
+                                Username</label>
+                            <input type="text" placeholder="Create username"
+                                class="rounded-md py-2 px-1 outline-none shadow-md" id="newUser">
+                            <span class="text-rose-500" id=""></span>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <label for="email" class="mb-2 text-black font-bold text-base tracking-widest">Email</label>
+                            <input type="email" placeholder="Enter Email"
+                                class="rounded-md py-2 px-1 outline-none shadow-md" id="email">
+                            <span class="text-rose-500" id=""></span>
+                        </div>
+
+
+
+                        <div class="flex flex-col">
+                            <label for="password" class="mb-2 text-black font-bold text-base tracking-widest">Create
+                                Password</label>
+                            <input type="password" placeholder="Create Password"
+                                class="rounded-md py-2 px-1 outline-none shadow-md" id="password">
+                            <span class="text-rose-500" id=""></span>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <label for="confirmPass" class="mb-2 text-black font-bold text-base tracking-widest">Confirm
+                                Password</label>
+                            <input type="password" placeholder="Confirm Password"
+                                class="rounded-md py-2 px-1 outline-none shadow-md" id="confirmPass">
+                            <span class="text-rose-500" id=""></span>
+                        </div>
+
+                        <button type="submit"
+                            class=" text-center bg-sky-600 p-2 rounded-md text-white font-bold w-full shadow-md"
+                            id="regBtn">Register
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
