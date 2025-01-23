@@ -26,6 +26,13 @@
     @apply md:text-white md:flex md:items-center md:justify-between md:gap-2 md:bg-gradient-to-r md:hover:from-white md:hover:to-transparent md:pl-24 pr-16 md:py-1 md:cursor-pointer
   }
 
+  .navBottom {
+    @apply w-10 h-1 rounded-md bg-white cursor-pointer
+  }
+
+  .mobileArrow {
+    @apply text-5xl absolute top-2/4 text-white -translate-y-1/2
+  }
 
 }
 

@@ -21,3 +21,5 @@ burgerContainer.addEventListener("click", (e) => {
     menu.classList.remove("-translate-x-0", "opacity-100", "visible");
   }
 });
+
+//hero Slider

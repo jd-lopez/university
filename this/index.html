@@ -10,12 +10,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
 
 <body class="">
-    <div class="relative overflow-x-hidden overflow-y-auto h-screen">
-        <header class="bg-sky-50
-    md:bg-sky-100  md:pt-2 md:sticky md:-top-[112px] z-[1]">
+    <div class="relative  overflow-y-auto h-screen">
+        <header class="bg-sky-50 sticky top-0
+    md:bg-sky-100  md:pt-2 md:sticky  md:-top-[112px] z-[2]">
             <nav class="flex justify-between items-center  px-3 w-full rounded-full">
                 <div>
                     <img class="rounded-full size-16 md:size-24" src="/assets/Logo maker project.png" alt="">
@@ -36,10 +37,10 @@
                 </div>
             </nav>
             <div id="menu"
-                class="invisible bg-white/15 absolute w-full left-0 transform  translate-x-full opacity-0 transition-all duration-200 ease-in-out backdrop-blur-md text-white
+                class="opacity-0 absolute z-[2] top-16 bg-white/20 transform left-0 w-full translate-x-full invisible transition-all duration-200 ease-in-out backdrop-blur-md text-white p-5
 
-        md:bg-sky-50 md:sticky md: md:block md:border-t-2 border-black md:px-36 md:transform-none md:translate-x-0 md:visible md:opacity-100 md:text-black md:mt-2">
-                <ul class="py-4
+        md:bg-sky-50 md:sticky md: md:block md:border-t-2 md:py-0 border-black md:px-36 md:transform-none md:translate-x-0 md:visible md:opacity-100 md:text-black md:mt-2">
+                <ul class="
                 md:flex md:justify-between md:py-0">
                     <li class="mobileNav
                     md:navBtn relative group ">Welcome <span class="md:block md:ml-5 hidden"><i
@@ -114,28 +115,86 @@
             </div>
         </header>
         <main>
-            <div class="relative">
-                <div class="h-80 md:h-96 w-full relative shadow-xl">
-                    <img class="h-full object-bottom object-cover w-full" src="/assets/Hero.jpg" alt="">
-                </div>
-                <div
-                    class="absolute bg-gradient-to-tr from-gray-100/20 to-gray-100/30 bg-cover top-0 left-0 right-0 bottom-0  w-full">
+            <div class="slider relative h-auto">
+
+                <div class="slides-container relative flex">
                     <div
-                        class="bg-white/15  absolute top-5 left- backdrop-blur-sm text-center md:w-3/4 p-4 shadow-md md:top-12 md:left-40">
-                        <h1 class="text-blue-600 text-base font-medium mb-3 md:text-2xl">Welcome to your DL University,
-                            the place where
-                            your
-                            future will be
-                            decided
-                        </h1>
+                        class="overlay absolute top-0 right-0 left-0 bottom-0 bg-gradient-to-r from-blue-800/20 to-red-400/20 pointer-events-none z-10">
                     </div>
-                    <div class="flex flex-col absolute top-2/3 left-1/4 gap-5 ">
-                        <button class="bg-yellow-400 rounded-md text-white text-xl p-1">
-                            Find your program
-                        </button>
-                        <button class="bg-blue-400 rounded-md text-white text-xl p-1">Connect with a counselor</button>
+                    <div class="slide md:  w-full top-0 left-0 h-[500px] shrink-0">
+                        <img class="h-full w-full object-bottom object-cover" src="/assets/images/Hero.jpg" alt="">
+                        <div
+                            class="absolute top-16 py-6 px-24 flex flex-col text-center items-center gap-16 text-xl font-bold text-white
+                    
+                    md:rounded-md md:bg-white/20 md:backdrop-blur-md md:py-10 md:px-8 md:w-96 md:font-normal md:top-16 md:left-32">
+                            <p class="hidden 
+                        md:block">DL University has been consistently in the first place in technology
+                                innovation over the last
+                                20 years. Here, we look ahead and aim to shape the future of our communities, our
+                                country
+                                and the world.</p>
+
+                            <p class="md:hidden">DL University has been consistently in the first place in technology
+                                innovation over the last
+                                20 years.</p>
+
+                            <button class="bg-yellow-500 rounded-md w-fit text-white p-1 text-base">MORE INFO</button>
+                        </div>
+                    </div>
+
+                    <!--Slide 2-->
+                    <div class="slide md: w-full relative top-0 left-0 h-[500px] shrink-0">
+                        <img class="h-full w-full object-bottom object-cover" src="/assets/images/second-hero.jpg"
+                            alt="">
+                        <div
+                            class="absolute top-10 py-6 px-24 flex flex-col text-center items-center gap-16 text-xl font-bold text-white
+                    
+                    md:rounded-md md:bg-white/20 md:backdrop-blur-md md:py-10 md:px-8 md:w-96 md:font-normal md:top-28 md:right-20">
+                            <p class="hidden 
+                        md:block">Discover our campus where thousand of students come from all around the
+                                world. See how we live our culture and values together.</p>
+
+                            <p class="md:hidden">Discover our campus where thousand of students come from all around the
+                                world</p>
+
+                            <button class="bg-yellow-500 rounded-md w-fit text-white p-1 text-base">MORE INFO</button>
+                        </div>
+                    </div>
+
+                    <!--Slide 3-->
+                    <div class="slide w-full relative top-0 left-0 h-[500px] shrink-0">
+                        <img class="h-full w-full object-center object-cover" src="/assets/images/third-hero.jpg"
+                            alt="">
+                        <div
+                            class="absolute top-10 py-6 px-24 flex flex-col text-center items-center gap-16 text-xl font-bold text-white
+                                        
+                                        md:rounded-md md:bg-white/20 md:backdrop-blur-md md:py-10 md:px-8 md:w-96 md:font-normal md:top-28 md:right-20">
+                            <p class="hidden 
+                                            md:block">Discover our campus where thousand of students come from all
+                                around the
+                                world. See how we live our culture and values together.</p>
+
+                            <p class="md:hidden">Discover our campus where thousand of students come from all around the
+                                world</p>
+
+                            <button class="bg-yellow-500 rounded-md w-fit text-white p-1 text-base">MORE INFO</button>
+                        </div>
                     </div>
                 </div>
+
+                <div id="mobNav" class="">
+                    <button id="leftBtn" class="mobileArrow left-5">
+                        < </button>
+                            <button id="rightBtn" class="mobileArrow right-5 ">
+                                >
+                            </button>
+                </div>
+                <div id="bottomNav" class="md:flex md:absolute md:bottom-5 left-2/4 md:gap-3">
+                    <div class="md:navBottom md:bg-blue-700"></div>
+                    <div class="md:navBottom"></div>
+                    <div class="md:navBottom"></div>
+                </div>
+
             </div>
 
             <section class=" md:px-52 p-12 bg-white ">
@@ -148,6 +207,7 @@
                         molestias totam fugit dolores! Consequatur.</p>
                 </div>
             </section>
+
         </main>
 
         <footer class="bg-sky-600  md:flex md:flex-col md:justify-between md:text-base  flex-wrap text-sm md:shadow-">
@@ -191,8 +251,8 @@
 
                     <div class="hidden sm:hidden md:flex md:flex-col md:gap-5">
                         <h1 class="text-white text-xl">Subscribe to our newsletter</h1>
-                        <input class="md:py-2 md:px-2 rounded-md" type="text" placeholder="Your Email Address">
-                        <button class="bg-yellow-500 rounded-md text-white font-bold">Submit</button>
+                        <input class="md:py-1 md:px-2 rounded-md" type="text" placeholder="Your Email Address">
+                        <button class="bg-yellow-500 py-1 rounded-md text-white font-bold">Submit</button>
                     </div>
                 </div>
             </div>
@@ -210,6 +270,7 @@
         </footer>
     </div>
     <script src="homeScript.js" defer></script>
+
 </body>
 
 </html>
