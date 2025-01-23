@@ -34,10 +34,8 @@
     @apply text-5xl absolute top-2/4 text-white -translate-y-1/2
   }
 
-}
+  .currentSlide {
+    @apply bg-blue-700
+  }
 
-/* .showMenu {
-  visibility: visible;
-  opacity: 1;
-  translate: -100%;
-} */
+}

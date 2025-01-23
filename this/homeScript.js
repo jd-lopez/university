@@ -23,3 +23,39 @@ burgerContainer.addEventListener("click", (e) => {
 });
 
 //hero Slider
+const slider = document.querySelector(".slider");
+const slidesContainer = document.querySelector(".slides-container");
+const slides = document.querySelectorAll(".slide");
+const leftBtn = document.getElementById("leftBtn");
+const rightBtn = document.getElementById("rightBtn");
+const bottomNav = document.getElementById("bottomNav");
+const eachBottonNav = Array.from(bottomNav.children);
+const slide = Array.from(slides);
+
+let currentIndex = 0;
+let time = 3000;
+
+function updateSlide() {
+  const offset = -(currentIndex * 100);
+  slidesContainer.style.transform = `translateX(${offset}%)`;
+
+  eachBottonNav.forEach((dot, index) => {
+    dot.classList.toggle("md:currentSlide", index === currentIndex);
+    dot.classList.toggle("bg-white", index === currentIndex);
+  });
+}
+
+rightBtn.addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % slide.length;
+  updateSlide();
+});
+
+leftBtn.addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + slide.length) % slide.length;
+  updateSlide();
+});
+
+let sliderInterval = setInterval(() => {
+  currentIndex = (currentIndex + 1) % slide.length;
+  updateSlide();
+}, 3000);
