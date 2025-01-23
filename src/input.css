@@ -34,6 +34,14 @@
     @apply text-5xl absolute top-2/4 text-white -translate-y-1/2
   }
 
+  .sectionBox {
+    @apply w-80 border-[1px] border-sky-400 p-6 text-white rounded-md flex flex-col gap-6 items-center text-justify duration-200 hover:bg-blue-950 shadow-lg cursor-pointer shadow-cyan-500/70 hover:shadow-indigo-500/50 transition-all
+  }
+
+  .button {
+    @apply py-1 px-2 rounded-md bg-cyan-400 active:bg-blue-950 transition duration-100 hover:animate-bounce shadow-lg shadow-cyan-500/50
+  }
+
   .currentSlide {
     @apply bg-blue-700
   }

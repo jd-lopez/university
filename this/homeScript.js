@@ -33,7 +33,6 @@ const eachBottonNav = Array.from(bottomNav.children);
 const slide = Array.from(slides);
 
 let currentIndex = 0;
-let time = 3000;
 
 function updateSlide() {
   const offset = -(currentIndex * 100);
@@ -58,4 +57,17 @@ leftBtn.addEventListener("click", () => {
 let sliderInterval = setInterval(() => {
   currentIndex = (currentIndex + 1) % slide.length;
   updateSlide();
-}, 3000);
+}, 5000);
+
+eachBottonNav.forEach((dot, index) => {
+  dot.addEventListener("click", () => {
+    currentIndex = index;
+    updateSlide();
+  });
+});
+
+///scroll animation
+
+const scrollAnimation = document.querySelectorAll(".scrollAnimation");
+
+//observer function

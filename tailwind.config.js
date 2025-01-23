@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        bgGradient: "url('../assets/2655.jpg')",
+        backBlue: "url('/assets/images/third-hero.jpg')",
       },
 
       boxShadow: {},

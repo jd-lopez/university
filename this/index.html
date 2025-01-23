@@ -17,10 +17,10 @@
 <body class="">
     <div class="relative overflow-x-hidden  overflow-y-auto h-screen">
         <header class="bg-sky-50 sticky top-0
-    md:bg-sky-100  md:pt-2 md:sticky  md:-top-[112px] z-10">
+    md:bg-sky-100  md:pt-2 md:sticky  md:-top-[145px] z-10">
             <nav class="flex justify-between items-center  px-3 w-full rounded-full">
                 <div>
-                    <img class="rounded-full size-16 md:size-24" src="/assets/Logo maker project.png" alt="">
+                    <img class="rounded-full size-16 md:size-32" src="/assets/Logo maker project.png" alt="">
                 </div>
 
 
@@ -40,7 +40,7 @@
             <div id="menu"
                 class="opacity-0 absolute top-16 bg-sky-600/40 transform left-0 w-full translate-x-full invisible transition-all duration-200 ease-in-out backdrop-blur-sm text-white p-5
 
-        md:bg-sky-50 md:sticky md: md:block md:border-t-2 md:py-0 border-black md:px-36 md:transform-none md:translate-x-0 md:visible md:opacity-100 md:text-black md:mt-2 ">
+        md:bg-sky-50 md:sticky md: md:block md:border-t-2 md:py-0 border-black md:px-36 md:transform-none md:translate-x-0 md:visible md:opacity-100 md:text-black md:mt-2 md:border-b-2 border-b-yellow-500">
                 <ul class="
                 md:flex md:justify-between md:py-0 ">
                     <li class="mobileNav
@@ -116,9 +116,9 @@
             </div>
         </header>
         <main>
-            <div class="slider relative h-auto">
+            <div class="slider relative h-auto shadow-lg">
                 <div
-                    class="overlay absolute top-0 right-0 left-0 bottom-0 bg-gradient-to-r from-blue-800/60 to-red-400/30 pointer-events-none z-[5]">
+                    class="overlay absolute top-0 right-0 left-0 bottom-0 bg-gradient-to-r from-sky-200/20 to-red-400/30 pointer-events-none z-[5]">
                 </div>
                 <div class="slides-container transition-transform duration-200 ease-in relative flex">
 
@@ -183,6 +183,26 @@
                             <button class="bg-yellow-500 rounded-md w-fit text-white p-1 text-base">MORE INFO</button>
                         </div>
                     </div>
+
+                    <div class="slide w-full relative top-0 left-[200%] h-[350px] md:h-[500px] shrink-0">
+                        <img class="h-full w-full object-center object-cover" src="/assets/images/fourth-hero.jpg"
+                            alt="">
+                        <div
+                            class="absolute top-10 py-6 px-24 flex flex-col text-center items-center gap-16 text-xl font-bold text-white
+                                                            
+                                                            md:rounded-md md:bg-white/20 md:backdrop-blur-md md:py-10 md:px-8 md:w-96 md:font-normal md:top-28 md:right-20">
+                            <p class="hidden 
+                                                                md:block">Discover our campus where thousand of
+                                students come from all
+                                around the
+                                world. See how we live our culture and values together.</p>
+
+                            <p class="md:hidden">Discover our campus where thousand of students come from all around the
+                                world</p>
+
+                            <button class="bg-yellow-500 rounded-md w-fit text-white p-1 text-base">MORE INFO</button>
+                        </div>
+                    </div>
                 </div>
 
                 <div id="mobNav" class="">
@@ -192,9 +212,10 @@
                                 >
                             </button>
                 </div>
-                <div id="bottomNav" class="md:flex md:absolute md:bottom-5 left-2/4 md:gap-3">
+                <div id="bottomNav" class="md:flex md:absolute md:bottom-5 left-2/4 md:-translate-x-1/2 md:gap-3">
                     <div class="md:navBottom md:currentSlide"></div>
                     <div class="md:navBottom "></div>
+                    <div class="md:navBottom"></div>
                     <div class="md:navBottom"></div>
                 </div>
 
@@ -208,12 +229,45 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum similique libero quis, commodi
                         assumenda excepturi et fugiat consequatur dolorum? Illum repudiandae optio cupiditate eaque ab
                         molestias totam fugit dolores! Consequatur.</p>
+                    <hr class="w-1/3 border-1  border-sky-400">
                 </div>
             </section>
+            <section class="bg-backBlue bg-no-repeat  bg-cover bg-center relative h-[700px]
+            md:h-[650px]
+            ">
+                <div class="absolute top-0 bottom-0 left-0 right-0 bg-blue-950/70"></div>
+                <div class="flex flex-wrap absolute top-1/2 -translate-y-1/2 left-[115px] gap-8">
+                    <div class="sectionBox scrollAnimation">
+                        <h1 class="text-blue-600 font-bold text-center">COMPUTER CIENCE</h1>
+                        <p>
+                            Check our techno campus and see what the future has for you.
+                        </p>
+                        <button class="button">More Info</button>
+                    </div>
 
+                    <div class="sectionBox scrollAnimation">
+                        <h1 class="text-blue-600 font-bold text-center uppercase">System Engeneering</h1>
+                        <p>
+                            Check our techno campus and see what the future has for you.
+
+                        </p>
+
+                        <button class="button">More Info</button>
+                    </div>
+
+                    <div class="sectionBox scrollAnimation">
+                        <h1 class="text-blue-600 font-bold text-center">ROBOTIC</h1>
+                        <p>
+                            Check our techno campus and see what the future has for you.
+                        </p>
+                        <button class="button">More Info</button>
+                    </div>
+                </div>
+
+            </section>
         </main>
 
-        <footer class="bg-sky-600  md:flex md:flex-col md:justify-between md:text-base  flex-wrap text-sm md:shadow-">
+        <footer class=" bg-sky-600 md:flex md:flex-col md:justify-between md:text-base flex-wrap text-sm md:shadow-">
             <div class="md:flex p-8 md:gap-20 flex-wrap">
                 <div class="flex flex-col justify-between items-center gap-3 mb-8">
                     <div>
@@ -261,7 +315,7 @@
             </div>
 
             <div class="bg-cyan-900 w-full text-white py-5 text-center">
-                DL Universy Union
+                DL University Union
             </div>
 
             <div class="flex justify-between text-gray-300 py-3 px-2">
