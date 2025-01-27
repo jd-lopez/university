@@ -68,6 +68,61 @@ eachBottonNav.forEach((dot, index) => {
 
 ///scroll animation
 
-const scrollAnimation = document.querySelectorAll(".scrollAnimation");
+const animateScroll = document.querySelectorAll(".animateScroll");
 
 //observer function
+
+const scrollCallback = (entries, obeserver) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("scrollTransition");
+    } else {
+      entry.target.classList.remove("scrollTransition");
+    }
+  });
+};
+
+const obeserver = new IntersectionObserver(scrollCallback, {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.1,
+});
+
+animateScroll.forEach((item) => obeserver.observe(item));
+
+// const observer = new IntersectionObserver((entries) => {
+//   entries.forEach((entry) => {
+//     if (entry.isIntersecting) {
+//       animateScroll.classList.add("scrollTransition");
+//       return;
+//     }
+//     animateScroll.classList.remove("scrollTransition");
+//   });
+// });
+
+// observer.observe(document.querySelector(".nextSection"));
+
+//background changing effect
+
+const slidingCard = document.querySelectorAll(".slidingCard");
+const bgChangingSection = document.getElementById("bgChangingSection");
+
+const backgrounds = ["firstBlue", "secondBlackBlue", "thirdBlackBlue"];
+
+slidingCard.forEach((card, index) => {
+  card.addEventListener("mouseover", () => {
+    console.log(`Hovered over card ${index + 1}`);
+    console.log(`Adding class: ${backgrounds[index]}`);
+
+    bgChangingSection.classList.remove("bg-backBlue");
+    bgChangingSection.classList.add(backgrounds[index]);
+
+    console.log(backgrounds);
+    console.log(typeof backgrounds[index]);
+  });
+
+  card.addEventListener("mouseleave", () => {
+    bgChangingSection.classList.remove(backgrounds[index]);
+    bgChangingSection.classList.add("bg-backBlue");
+  });
+});

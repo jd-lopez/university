@@ -47,3 +47,33 @@
   }
 
 }
+
+.animateScroll {
+  transform: translateX(450px);
+  opacity: 0;
+  transition: 300ms ease-in-out
+}
+
+.scrollTransition {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+.backBlue {
+  background-image: url(/assets/images/fourth-hero.jpg);
+}
+
+.firstBlue {
+  background-image: url(/assets/images/Hero.jpg);
+
+}
+
+.secondBlackBlue {
+  background-image: url(/assets/images/Linus.webp);
+
+}
+
+.thirdBlackBlue {
+  background-image: url(/assets/images/second-hero.jpg);
+}
